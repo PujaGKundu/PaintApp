@@ -14,6 +14,10 @@ window.onload = function () {
     y: 0,
   };
 
+  canvas.addEventListener("click", () => {
+    alert("Hit");
+  });
+
   //double click on triangle
   canvas.addEventListener("dblclick", function (evt) {
     var position = getMousePositions(canvas, evt);
